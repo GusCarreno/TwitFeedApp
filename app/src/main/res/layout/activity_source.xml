@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeSource"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.styba.twitfeeds.sources.SourceActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorYellow2"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="@string/source.title.top"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                fontPath="fonts/Lato_Regular.ttf"
+                tools:ignore="MissingPrefix" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/buttonDone"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:text="@string/source.button.done"
+                android:textColor="@android:color/white"
+                android:theme="@style/PrimaryFlatButton"
+                fontPath="fonts/Lato_Regular.ttf"
+                tools:ignore="MissingPrefix,RelativeOverlap" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textViewLabel1"
+        fontPath="fonts/Lato_Regular.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textColor="@color/colorBlue3"
+        android:textSize="@dimen/twit.title.text.size"
+        android:text="@string/source.label1"
+        tools:ignore="MissingPrefix"
+        tools:text="Source from El Salvador" />
+
+    <TextView
+        android:id="@+id/textViewSourceLocation"
+        fontPath="fonts/Lato_Black.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLabel1"
+        android:padding="10dp"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textColor="@color/colorBlue3"
+        android:textSize="@dimen/twit.title.text.size"
+        tools:ignore="MissingPrefix"
+        tools:text="Source from El Salvador" />
+
+    <LinearLayout
+        android:id="@+id/linearAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSourceLocation"
+        android:background="@color/colorBlue3"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            fontPath="fonts/Lato_Black.ttf"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/twit.title.text.size"
+            android:text="@string/source.label.all"
+            android:padding="10dp"
+            tools:ignore="MissingPrefix" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchSourceAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:theme="@style/SwitchCompatTheme" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewSources"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearAll"/>
+
+    <include
+        layout="@layout/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

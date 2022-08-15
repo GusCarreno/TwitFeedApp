@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingLayoutSettings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    app:umanoOverlay="true"
+    app:umanoPanelHeight="0dp"
+    tools:context=".main.fragments.settings.SettingsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewSettings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/textViewVersion"
+            android:layout_margin="10dp" />
+
+        <include
+            layout="@layout/loading_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/textViewVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorBlue2"
+            android:textSize="12sp"
+            tools:text="1.2.0"
+            tools:ignore="MissingPrefix"
+            fontPath="fonts/Lato_Regular.ttf" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/panel_settings" />
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

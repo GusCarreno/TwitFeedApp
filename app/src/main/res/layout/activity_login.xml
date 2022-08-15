@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginActivity">
+
+    <include
+        android:id="@+id/linearTop"
+        layout="@layout/header_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLinkLater"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearTop">
+
+        <TextView
+            fontPath="fonts/Lato_Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/login.label1"
+            android:textColor="@color/colorGray1"
+            android:textSize="@dimen/login.text.size"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            fontPath="fonts/Lato_Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/login.label2"
+            android:textColor="@color/colorBlue1"
+            android:textSize="@dimen/login.text.size"
+            tools:ignore="MissingPrefix" />
+
+        <com.twitter.sdk.android.core.identity.TwitterLoginButton
+            android:id="@+id/twitterButton"
+            fontPath="fonts/Lato_Regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login.google.marginTop"
+            android:gravity="center"
+            android:text="@string/login.twitter"
+            android:textColor="@color/colorGray1"
+            android:textSize="16sp"
+            tools:ignore="MissingPrefix" />
+
+        <!--<LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/login.twitter.marginTop"
+            android:background="@drawable/border_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/ic_twitter" />
+
+            <TextView
+                fontPath="fonts/Lato_Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/login.twitter"
+                android:textColor="@color/colorGray1"
+                android:textSize="16sp"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>-->
+
+        <!--<TextView
+            fontPath="fonts/Lato_Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login.label3.marginTop"
+            android:gravity="center_horizontal"
+            android:text="@string/login.label3"
+            android:textColor="@color/colorGray1"
+            android:textSize="@dimen/login.text.size"
+            tools:ignore="MissingPrefix" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/login.facebook.marginTop"
+            android:background="@drawable/border_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/ic_facebook_icon" />
+
+            <TextView
+                fontPath="fonts/Lato_Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/login.facebook"
+                android:textColor="@color/colorGray1"
+                android:textSize="16sp"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/login.google.marginTop"
+            android:background="@drawable/border_button"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/ic_google_icon" />
+
+            <TextView
+                fontPath="fonts/Lato_Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/login.google"
+                android:textColor="@color/colorGray1"
+                android:textSize="16sp"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>-->
+
+        <TextView
+            fontPath="fonts/Lato_Regular.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login.label4.marginTop"
+            android:gravity="center_horizontal"
+            android:text="@string/login.label4"
+            android:textColor="@color/colorGray1"
+            android:textSize="@dimen/login.text.size"
+            tools:ignore="MissingPrefix" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/buttonLinkLater"
+        fontPath="fonts/Lato_Regular.ttf"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="@color/colorBlue2"
+        android:text="@string/login.button"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingPrefix" />
+
+</android.support.constraint.ConstraintLayout>

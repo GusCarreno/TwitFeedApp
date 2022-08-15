@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingLayoutProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    app:umanoOverlay="true"
+    app:umanoPanelHeight="0dp"
+    tools:context="com.styba.twitfeeds.profile.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorYellow2"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    fontPath="fonts/Lato_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/profile.title.top"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    tools:ignore="MissingPrefix" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/linearContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearProfile"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/border_button"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:contentDescription="@null"
+                    android:src="@mipmap/ic_twitter_logo"/>
+
+                <TextView
+                    android:id="@+id/textViewUser"
+                    fontPath="fonts/Lato_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textColor="@color/colorBlue2"
+                    android:textSize="18sp"
+                    tools:text="gccarreno"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewLabel1"
+                fontPath="fonts/Lato_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/login.label1"
+                android:textColor="@color/colorGray1"
+                android:textSize="@dimen/login.text.size"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:id="@+id/textViewLabel2"
+                fontPath="fonts/Lato_Regular.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/login.label2"
+                android:textColor="@color/colorBlue1"
+                android:textSize="@dimen/login.text.size"
+                tools:ignore="MissingPrefix" />
+
+            <com.twitter.sdk.android.core.identity.TwitterLoginButton
+                android:id="@+id/twitterButton"
+                fontPath="fonts/Lato_Regular.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/login.google.marginTop"
+                android:gravity="center"
+                android:text="@string/login.twitter"
+                android:textColor="@color/colorGray1"
+                android:textSize="16sp"
+                tools:ignore="MissingPrefix" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/buttonNotification"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/login.google.marginTop"
+                android:theme="@style/NotificationButton"
+                android:gravity="center"
+                android:text="@string/profile.button.notification" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearChooseLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearContent"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                fontPath="fonts/Lato_Regular.ttf"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorGray3"
+                android:gravity="center"
+                android:text="@string/profile.default.location"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:id="@+id/textViewLocation"
+                fontPath="fonts/Lato_Black.ttf"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:background="@color/colorGray3"
+                android:gravity="center"
+                android:textColor="@color/colorBlue2"
+                android:textSize="16sp"
+                tools:ignore="MissingPrefix"
+                tools:text="El Salvador" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearChooseLocation"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                fontPath="fonts/Lato_Regular.ttf"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:text="@string/profile.source.language"
+                android:textColor="@color/colorBlue2"
+                android:textSize="@dimen/profile.language.text.size"
+                tools:ignore="MissingPrefix" />
+
+            <co.ceryle.radiorealbutton.library.RadioRealButtonGroup
+                android:id="@+id/radioGroupLanguage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:elevation="5dp"
+                app:rrbg_animateTexts_enter="overshoot"
+                app:rrbg_animateTexts_enterDuration="500"
+                app:rrbg_backgroundColor="@color/colorBlue1"
+                app:rrbg_borderColor="@color/colorBlue1"
+                app:rrbg_borderSize="1dp"
+                app:rrbg_bottomLineColor="@android:color/transparent"
+                app:rrbg_bottomLineRadius="2dp"
+                app:rrbg_bottomLineSize="3dp"
+                app:rrbg_checkedPosition="0"
+                app:rrbg_dividerColor="@color/colorGray2"
+                app:rrbg_dividerRadius="2dp"
+                app:rrbg_dividerSize="1dp"
+                app:rrbg_radius="5dp"
+                app:rrbg_selectorColor="@android:color/white"
+                app:rrbg_selectorFullSize="false"
+                app:rrbg_selectorRadius="0dp">
+
+                <co.ceryle.radiorealbutton.library.RadioRealButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:rrb_ripple="true"
+                    app:rrb_rippleColor="@color/colorBlue2"
+                    app:rrb_text="@string/profile.language.spanish"
+                    app:rrb_textGravity="center"
+                    app:rrb_textSize="@dimen/profile.choose.text.size"
+                    app:rrb_textColor="@android:color/white"
+                    app:rrb_textTypefacePath="fonts/Lato_Black.ttf" />
+
+                <co.ceryle.radiorealbutton.library.RadioRealButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:rrb_ripple="true"
+                    app:rrb_rippleColor="@color/colorBlue2"
+                    app:rrb_text="@string/profile.language.english"
+                    app:rrb_textGravity="center"
+                    app:rrb_textSize="@dimen/profile.choose.text.size"
+                    app:rrb_textColor="@android:color/white"
+                    app:rrb_textTypefacePath="fonts/Lato_Black.ttf" />
+
+            </co.ceryle.radiorealbutton.library.RadioRealButtonGroup>
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/loading_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearContent"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/panel_location" />
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

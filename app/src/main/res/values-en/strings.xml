@@ -1,0 +1,149 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- General label -->
+    <string name="label.continue" tools:ignore="ExtraTranslation">Continue</string>
+    <string name="channel_name">TwitFeed Channel</string>
+    <string name="channel_description">Canal para notificar a los usuarios</string>
+    <string name="yes.label" tools:ignore="ExtraTranslation">Yes</string>
+    <string name="no.label" tools:ignore="ExtraTranslation">No</string>
+    <string name="share.label" tools:ignore="ExtraTranslation">Share</string>
+    <string name="change.label" tools:ignore="ExtraTranslation">Change mode</string>
+
+    <!-- Terms and conditions -->
+    <string name="terms.label.title" tools:ignore="ExtraTranslation">WELCOME TO TWITFEED!</string>
+    <string name="terms.label.content" tools:ignore="ExtraTranslation">From local to international, from business to sports. All your news content in one APP</string>
+    <string name="terms.label.switch" tools:ignore="ExtraTranslation">Accept terms &amp; conditions</string>
+    <string name="terms.label.alert" tools:ignore="ExtraTranslation">You must accept the terms and conditions before continuing</string>
+
+    <!-- Location -->
+    <string name="location.title" tools:ignore="ExtraTranslation">Locations</string>
+    <string name="location.label.content1" tools:ignore="ExtraTranslation">A worldwide APP with a Local Focus. Please choose you default News Location.</string>
+    <string name="location.label.content2" tools:ignore="ExtraTranslation">* Remember you can change your default location in settings.</string>
+    <string name="location.button" tools:ignore="ExtraTranslation">Choose location</string>
+    <string name="location.alert" tools:ignore="ExtraTranslation">You must choose an option before continuing</string>
+    <string name="location.error" tools:ignore="ExtraTranslation">Sorry, Locations not available</string>
+    <string name="location.search.hint" tools:ignore="ExtraTranslation">Search</string>
+    <string name="location.item" tools:ignore="ExtraTranslation">%1$s, %2$s</string>
+
+    <!-- Login -->
+    <string name="login.label1" tools:ignore="ExtraTranslation">TWITFEED selects your news based on social media interactions. To get the full benefits of the APP we suggest you link one of your account</string>
+    <string name="login.label2" tools:ignore="ExtraTranslation">TWITFEED works bests if you link your twitter account</string>
+    <string name="login.label3" tools:ignore="ExtraTranslation">Don\'t have a twitter account? You can also use:</string>
+    <string name="login.label4" tools:ignore="ExtraTranslation">You can always link an account later in settings. Learn the benefits of linking one of you accounts in our FAQ section in setting</string>
+    <string name="login.twitter" tools:ignore="ExtraTranslation">TWITTER</string>
+    <string name="login.facebook" tools:ignore="ExtraTranslation">FACEBOOK</string>
+    <string name="login.google" tools:ignore="ExtraTranslation">GOOGLE</string>
+    <string name="login.button" tools:ignore="ExtraTranslation">Link and Account Later</string>
+
+    <!-- Welcome -->
+    <string name="welcome.label1" tools:ignore="ExtraTranslation">Congratulation, \nEnjoy your News!</string>
+    <string name="welcome.label2" tools:ignore="ExtraTranslation">Visit the settings section to configure notifications, change locations, read the FAQ and more.</string>
+    <string name="welcome.button" tools:ignore="ExtraTranslation">Finish</string>
+    <string name="welcome.error" tools:ignore="ExtraTranslation">Sorry, it was not possible to load the data</string>
+
+    <!-- Main -->
+    <string-array name="main.twits" tools:ignore="ExtraTranslation">
+        <item>NATIONAL</item>
+        <item>INTERNATIONAL</item>
+        <item>SPORTS</item>
+        <item>ECONOMY_BUSINESS</item>
+        <item>SCI_TECH</item>
+    </string-array>
+    <string-array name="main.sections.names.with_local" tools:ignore="ExtraTranslation">
+        <item>TOP</item>
+        <item>LOCAL</item>
+        <item>NATIONAL</item>
+        <item>WORLD</item>
+        <item>SPORTS</item>
+        <item>ECONOMY</item>
+        <item>SCI. &amp; TECH</item>
+        <item>SETTINGS</item>
+    </string-array>
+    <string-array name="main.sections.with_local" tools:ignore="ExtraTranslation">
+        <item>TOP</item>
+        <item>LOCAL</item>
+        <item>NATIONAL</item>
+        <item>INTERNATIONAL</item>
+        <item>SPORTS</item>
+        <item>ECONOMY_BUSINESS</item>
+        <item>SCI_TECH</item>
+        <item>SETTINGS</item>
+    </string-array>
+    <string-array name="main.sections.names" tools:ignore="ExtraTranslation">
+        <item>TOP</item>
+        <item>NATIONAL</item>
+        <item>WORLD</item>
+        <item>SPORTS</item>
+        <item>ECONOMY</item>
+        <item>SCI. &amp; TECH</item>
+        <item>SETTINGS</item>
+    </string-array>
+    <string-array name="main.sections" tools:ignore="ExtraTranslation">
+        <item>TOP</item>
+        <item>NATIONAL</item>
+        <item>INTERNATIONAL</item>
+        <item>SPORTS</item>
+        <item>ECONOMY_BUSINESS</item>
+        <item>SCI_TECH</item>
+        <item>SETTINGS</item>
+    </string-array>
+    <string name="main.banner.source" tools:ignore="ExtraTranslation">%1$s >> %2$s HR</string>
+    <string name="main.label1" tools:ignore="ExtraTranslation">LATEST NEWS</string>
+    <string name="main.latest.not.available" tools:ignore="ExtraTranslation">The news are</string>
+    <string name="main.label2" tools:ignore="ExtraTranslation">You are viewing news from</string>
+    <string name="main.latest.news.source" tools:ignore="ExtraTranslation">%1$s >> %2$s MIN</string>
+    <string name="main.weather.degrees" tools:ignore="ExtraTranslation">%1$sº</string>
+    <string name="main.weather.not.available" tools:ignore="ExtraTranslation">Sorry, climate data not available</string>
+    <string name="main.twit.time" tools:ignore="ExtraTranslation">%1$s >> HR</string>
+    <string name="main.data.option1.title" tools:ignore="ExtraTranslation">Image Download</string>
+    <string name="main.data.option1.content" tools:ignore="ExtraTranslation">Download images only in WIFI</string>
+    <string name="main.data.option2.title" tools:ignore="ExtraTranslation">Reader Mode</string>
+    <string name="main.data.option2.content" tools:ignore="ExtraTranslation">Show news in reader mode</string>
+    <string name="main.top.time" tools:ignore="ExtraTranslation">%1$s hrs</string>
+    <string name="main.share.label" tools:ignore="ExtraTranslation">%1$s Shared using #TwitFeed</string>
+    <string name="main.empty.twits" tools:ignore="ExtraTranslation">
+        There are no news for this section. Please go settings/sources to add more feeds. To get the best experience, we suggest you select all the sources for all sections
+    </string>
+    <string name="main.rate.title" tools:ignore="ExtraTranslation">Rate TwitFeed</string>
+    <string name="main.rate.message" tools:ignore="ExtraTranslation">If you enjoy playing this app, would you mind taking a moment to rate it? It won\'t take more than a minute. Thanks for your support!</string>
+    <string name="main.rate.now" tools:ignore="ExtraTranslation">Rate it now</string>
+    <string name="main.rate.later" tools:ignore="ExtraTranslation">Remind me later</string>
+
+    <string-array name="main.settings.names" tools:ignore="ExtraTranslation">
+        <item>Explore Other Locations</item>
+        <item>Profile</item>
+        <item>Source</item>
+        <item>Data Options</item>
+        <item>Support/FAQ</item>
+        <item>Terms of Service</item>
+    </string-array>
+
+    <!-- Source -->
+    <string name="source.title.top" tools:ignore="ExtraTranslation">Sources</string>
+    <string name="source.title.value" tools:ignore="ExtraTranslation">Source from %1$s</string>
+    <string name="source.label1" tools:ignore="ExtraTranslation">Select the TWITTER accounts you like. We suggest you select all to get the best experience.</string>
+    <string name="source.label.all" tools:ignore="ExtraTranslation">SELECT ALL</string>
+    <string name="source.label.value" tools:ignore="ExtraTranslation">%1$s (%2$s)</string>
+    <string name="source.button.done" tools:ignore="ExtraTranslation">Done</string>
+    <string name="source.section.local" tools:ignore="ExtraTranslation">LOCAL</string>
+    <string name="source.section.national" tools:ignore="ExtraTranslation">NATIONAL</string>
+    <string name="source.section.international" tools:ignore="ExtraTranslation">WORLD</string>
+    <string name="source.section.sports" tools:ignore="ExtraTranslation">SPORTS</string>
+    <string name="source.section.economy" tools:ignore="ExtraTranslation">ECONOMY</string>
+    <string name="source.section.tech" tools:ignore="ExtraTranslation">SCI. &amp; TECH</string>
+    <string name="source.error" tools:ignore="ExtraTranslation">Sorry, Sources not available</string>
+    <string name="source.no_selected.error" tools:ignore="ExtraTranslation">You must select at least one source</string>
+
+    <!-- Profile -->
+    <string name="profile.title.top" tools:ignore="ExtraTranslation">Profile</string>
+    <string name="profile.button.notification" tools:ignore="ExtraTranslation">Notifications</string>
+    <string name="profile.default.location" tools:ignore="ExtraTranslation">Default location:</string>
+    <string name="profile.source.language" tools:ignore="ExtraTranslation">Application language</string>
+    <string name="profile.source.sections" tools:ignore="ExtraTranslation">(World, Sports, Economy, Sci Tech)</string>
+    <string name="profile.language.spanish" tools:ignore="ExtraTranslation">Spanish</string>
+    <string name="profile.language.english" tools:ignore="ExtraTranslation">English</string>
+    <string name="profile.dialog.location.title" tools:ignore="ExtraTranslation">TwitFeed</string>
+    <string name="profile.dialog.location.message" tools:ignore="ExtraTranslation">Changing default location?</string>
+    <string name="profile.error" tools:ignore="ExtraTranslation">Sorry, it was not possible to save your profile</string>
+
+</resources>

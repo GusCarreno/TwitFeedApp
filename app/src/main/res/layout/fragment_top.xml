@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.fragments.top.TopFragment">
+
+    <include
+        layout="@layout/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/linearContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:visibility="invisible"
+        tools:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/frameTop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.6">
+
+            <ImageView
+                android:id="@+id/imageViewBanner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/default_news"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:src="@drawable/view"
+                android:scaleType="centerCrop"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    fontPath="fonts/Lato_Black.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/top.title.text.size"
+                    android:textStyle="bold"
+                    tools:ignore="MissingPrefix"
+                    tools:text="Trump ordena preparar nuevos aranceles sobre productos chinos por 200.000 millones de dólares"/>
+
+                <TextView
+                    android:id="@+id/textViewProfile"
+                    fontPath="fonts/Lato_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewTitle"
+                    android:layout_marginStart="25dp"
+                    android:textColor="@color/colorYellow2"
+                    android:textSize="@dimen/top.source.text.size"
+                    tools:ignore="MissingPrefix"
+                    tools:text="elsalvador.com >> 7 HR" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLatestNew"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.7"
+            android:background="@color/colorRed"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorYellow2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        fontPath="fonts/Lato_Black.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/main.label1"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/top.latest.title.text.size"
+                        android:textStyle="bold"
+                        tools:ignore="MissingPrefix" />
+
+                    <ImageView
+                        android:layout_width="@dimen/top.latest.image.text.size"
+                        android:layout_height="@dimen/top.latest.image.text.size"
+                        android:layout_marginStart="5dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_twitter" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewNews"
+                    fontPath="fonts/Lato_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linearTitle"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/top.latest.content.text.size"
+                    android:maxLines="2"
+                    tools:ignore="MissingPrefix"
+                    tools:text="Trump ordena preparar nuevos aranceles sobre productos chinos por 200.000 millones de dólares" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageViewProfile"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop" />
+
+                    <TextView
+                        android:id="@+id/textViewSource"
+                        fontPath="fonts/Lato_Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/top.latest.source.text.size"
+                        android:textStyle="bold"
+                        tools:ignore="MissingPrefix"
+                        tools:text="RTultimahora >> 12 MIN" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="@color/colorGray3">
+
+            <TextView
+                android:id="@+id/textViewWeatherFail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:visibility="invisible"
+                fontPath="fonts/Lato_Regular.ttf"
+                tools:ignore="MissingPrefix" />
+
+            <LinearLayout
+                android:id="@+id/linearLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    fontPath="fonts/Lato_Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/main.label2"
+                    android:textColor="@color/colorBlue2"
+                    android:textSize="@dimen/top.weather.title.text.size"
+                    tools:ignore="MissingPrefix" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <TextView
+                        android:id="@+id/textViewLocation"
+                        fontPath="fonts/Lato_Bold.ttf"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorBlue2"
+                        android:textSize="@dimen/top.weather.location.text.size"
+                        tools:ignore="MissingPrefix"
+                        tools:text="San Salvador" />
+
+                    <ImageView
+                        android:id="@+id/imageViewLocation"
+                        android:layout_width="@dimen/top.weather.location.image.size"
+                        android:layout_height="@dimen/top.weather.location.image.size"
+                        android:layout_marginStart="20dp"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/ic_sv" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textViewTime"
+                    fontPath="fonts/Lato_Bold.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/top.weather.hour.text.size"
+                    tools:ignore="MissingPrefix"
+                    tools:text="17:28 hrs" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeWeather"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/linearLocation"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/imageViewWeather"
+                    android:layout_width="@dimen/top.weather.degrees.image.size"
+                    android:layout_height="@dimen/top.weather.degrees.image.size"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/textViewDegrees"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_rain" />
+
+                <TextView
+                    android:id="@+id/textViewDegrees"
+                    fontPath="fonts/Lato_Bold.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:gravity="bottom"
+                    android:text="@string/main.label2"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/top.weather.degrees.text.size"
+                    tools:ignore="MissingPrefix"
+                    tools:text="25º" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

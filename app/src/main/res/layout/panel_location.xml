@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLocation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorYellow2"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/imageButtonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/location.title"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            fontPath="fonts/Lato_Bold.ttf"
+            tools:ignore="MissingPrefix" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearHeading"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorGray1"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_bg"
+            android:drawableStart="@drawable/ic_search"
+            android:inputType="text"
+            android:textSize="14sp"
+            android:hint="@string/location.search.hint"
+            android:labelFor="@+id/editTextSearch"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewLocations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/location_row" />
+</LinearLayout>

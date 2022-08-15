@@ -1,0 +1,186 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">TwitFeed</string>
+    <string name="app_name_big" translatable="false">TWITFEED</string>
+    <string name="facebook_app_id" translatable="false">2016589465281371</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb2016589465281371</string>
+    <string name="default_notification_channel_id" translatable="false">twit_channel</string>
+    <!--string name="fabric_key">f47501aa31c209c6707c964b5bff4b86e3fdc85a</string--><!-- Ivan -->
+    <string name="fabric_key" translatable="false">bf36165b86c3befbe914f9dcc8f28e2f7c5d8a2d</string><!-- TwitFeed -->
+    <string name="twitter_key" translatable="false">O0nYYpMAHd12RhjSX0rQbJA8p</string>
+    <string name="twitter_secret" translatable="false">2T6pTIyrJvRdIFbpootuAtQJCNK38SSt13N3EwMJIfl56ToNe1</string>
+    <string name="twit_comments" translatable="false">https://twitter.com/CNNEE/status/%1$s</string>
+
+    <!-- General label -->
+    <string name="label.continue" tools:ignore="ExtraTranslation">Continuar</string>
+    <string name="channel_name">TwitFeed Channel</string>
+    <string name="channel_description">Canal para notificar a los usuarios</string>
+    <string name="yes.label" tools:ignore="ExtraTranslation">Si</string>
+    <string name="no.label" tools:ignore="ExtraTranslation">No</string>
+    <string name="share.label" tools:ignore="ExtraTranslation">Compartir</string>
+    <string name="change.label" tools:ignore="ExtraTranslation">Cambiar vista</string>
+
+    <!-- Terms and conditions -->
+    <string name="terms.label.title" tools:ignore="ExtraTranslation">¡BIENVENIDO A TWITFEED!</string>
+    <string name="terms.label.content" tools:ignore="ExtraTranslation">De Local a Internacional, de Negocios a Deportes. Todas las noticias en una sola APP</string>
+    <string name="terms.label.switch" tools:ignore="ExtraTranslation">Aceptar Términos y Condiciones.</string>
+    <string name="terms.label.alert" tools:ignore="ExtraTranslation">Por favor aceptar Términos y Condiciones.</string>
+
+    <!-- Location -->
+    <string name="location.title" tools:ignore="ExtraTranslation">Ciudades</string>
+    <string name="location.label.content1" tools:ignore="ExtraTranslation">Selecciona tu ubicación de noticias.</string>
+    <string name="location.label.content2" tools:ignore="ExtraTranslation">* Recuerda que puedes cambiar tu ubicación en ajustes</string>
+    <string name="location.button" tools:ignore="ExtraTranslation">Selecciona una ubicación</string>
+    <string name="location.alert" tools:ignore="ExtraTranslation">Seleccione una ubicación primero.</string>
+    <string name="location.error" tools:ignore="ExtraTranslation">ubicaciónes no disponibles, intente de nuevo</string>
+    <string name="location.search.hint" tools:ignore="ExtraTranslation">Buscando</string>
+    <string name="location.item" tools:ignore="ExtraTranslation">%1$s, %2$s</string>
+
+    <!-- Login -->
+    <string name="login.label1" tools:ignore="ExtraTranslation">Ingresa con tu cuenta de Twitter</string>
+    <string name="login.label2" tools:ignore="ExtraTranslation">TWITFEED funciona mejor si te logueas con tu cuenta de twitter</string>
+    <string name="login.label3" tools:ignore="ExtraTranslation">Si no tienes una cuenta de twitter puedes ocupar estas opciones: </string>
+    <string name="login.label4" tools:ignore="ExtraTranslation">Siempre puedes loguearte con twitter en ajustes, para saber q ventajas de loguearse con twitter lee la sección de preguntas frecuentes/faq</string>
+    <string name="login.twitter" tools:ignore="ExtraTranslation">TWITTER</string>
+    <string name="login.facebook" tools:ignore="ExtraTranslation">FACEBOOK</string>
+    <string name="login.google" tools:ignore="ExtraTranslation">GOOGLE</string>
+    <string name="login.button" tools:ignore="ExtraTranslation">Seguir sin cuenta</string>
+
+    <!-- Welcome -->
+    <string name="welcome.label1" tools:ignore="ExtraTranslation">Felicidades disfruta tu contenido!</string>
+    <string name="welcome.label2" tools:ignore="ExtraTranslation">En ajustes puedes encontrar: cambiar ubicación, leer preguntas frecuentes y mas.</string>
+    <string name="welcome.button" tools:ignore="ExtraTranslation">Finalizar</string>
+    <string name="welcome.error" tools:ignore="ExtraTranslation">Lo sentimos, no fue posible cargar los datos.</string>
+
+    <!-- Main -->
+    <string-array name="main.twits" tools:ignore="ExtraTranslation">
+        <item>NATIONAL</item>
+        <item>INTERNATIONAL</item>
+        <item>SPORTS</item>
+        <item>ECONOMY_BUSINESS</item>
+        <item>SCI_TECH</item>
+    </string-array>
+    <string-array name="main.sections.names.with_local" tools:ignore="ExtraTranslation">
+        <item>TOP</item>
+        <item>LOCAL</item>
+        <item>NACIONAL</item>
+        <item>INTERNACIONAL</item>
+        <item>DEPORTES</item>
+        <item>ECONOMÍA</item>
+        <item>¡MÁS!</item>
+        <item>AJUSTES</item>
+    </string-array>
+    <string-array name="main.sections.with_local" tools:ignore="ExtraTranslation">
+        <item>TOP</item>
+        <item>LOCAL</item>
+        <item>NATIONAL</item>
+        <item>INTERNATIONAL</item>
+        <item>SPORTS</item>
+        <item>ECONOMY_BUSINESS</item>
+        <item>SCI_TECH</item>
+        <item>SETTINGS</item>
+    </string-array>
+    <string-array name="main.sections.names" tools:ignore="ExtraTranslation">
+        <item>TOP</item>
+        <item>NACIONAL</item>
+        <item>INTERNACIONAL</item>
+        <item>DEPORTES</item>
+        <item>ECONOMÍA</item>
+        <item>¡MÁS!</item>
+        <item>AJUSTES</item>
+    </string-array>
+    <string-array name="main.sections" tools:ignore="ExtraTranslation">
+        <item>TOP</item>
+        <item>NATIONAL</item>
+        <item>INTERNATIONAL</item>
+        <item>SPORTS</item>
+        <item>ECONOMY_BUSINESS</item>
+        <item>SCI_TECH</item>
+        <item>SETTINGS</item>
+    </string-array>
+    <string name="main.banner.source" tools:ignore="ExtraTranslation">%1$s >> %2$s HR</string>
+    <string name="main.label1" tools:ignore="ExtraTranslation">ULTIMA HORA</string>
+    <string name="main.latest.not.available" tools:ignore="ExtraTranslation">Contenido de</string>
+    <string name="main.label2" tools:ignore="ExtraTranslation">Estas viendo contenido de:</string>
+    <string name="main.latest.news.source" tools:ignore="ExtraTranslation">%1$s >> %2$s MIN</string>
+    <string name="main.weather.degrees" tools:ignore="ExtraTranslation">%1$sº</string>
+    <string name="main.weather.not.available" tools:ignore="ExtraTranslation">Clima no disponible por el momento</string>
+    <string name="main.twit.time" tools:ignore="ExtraTranslation">%1$s >> HR</string>
+    <string name="main.data.option1.title" tools:ignore="ExtraTranslation">Descargando imagen</string>
+    <string name="main.data.option1.content" tools:ignore="ExtraTranslation">Descargar imagenes solo con WIFI</string>
+    <string name="main.data.option2.title" tools:ignore="ExtraTranslation">Solo lectura</string>
+    <string name="main.data.option2.content" tools:ignore="ExtraTranslation">Mostrar contenido como solo lectura</string>
+    <string name="main.top.time" tools:ignore="ExtraTranslation">%1$s hrs</string>
+    <string name="main.share.label" tools:ignore="ExtraTranslation">%1$s Compartido vía #TwitFeed</string>
+    <string name="main.empty.twits" tools:ignore="ExtraTranslation">
+        No existe contenido para esta sección. Por favor ve a ajustes/fuentes para agregar mas fuentes . Para tener la mejor experiencia te sugerimos habilites todas las fuentes.
+    </string>
+    <string name="main.rate.title" tools:ignore="ExtraTranslation">Valora TwitFeed</string>
+    <string name="main.rate.message" tools:ignore="ExtraTranslation">Si te gusta esta aplicación, puedes apartar un momento para valorar la app? No tomara mas de un minuto, gracias por tu apoyo!</string>
+    <string name="main.rate.now" tools:ignore="ExtraTranslation">Valorar ahora</string>
+    <string name="main.rate.later" tools:ignore="ExtraTranslation">Recordarme luego</string>
+
+    <string-array name="main.settings.names" tools:ignore="ExtraTranslation">
+        <item>Explorar otras ubicaciones</item>
+        <item>Perfil</item>
+        <item>Fuentes</item>
+        <item>Opciones de datos</item>
+        <item>Soporte/FAQ</item>
+        <item>Términos y Condiciones</item>
+    </string-array>
+
+    <!-- Source -->
+    <string name="source.title.top" tools:ignore="ExtraTranslation">Fuentes</string>
+    <string name="source.title.value" tools:ignore="ExtraTranslation">Fuentes de %1$s</string>
+    <string name="source.label1" tools:ignore="ExtraTranslation">Selecciona las cuentes de TWITTER que te gustan mas. Sugerimos seleccionar todas para tener una experiencia completa.</string>
+    <string name="source.label.all" tools:ignore="ExtraTranslation">SELECIONAR TODAS</string>
+    <string name="source.label.value" tools:ignore="ExtraTranslation">%1$s (%2$s)</string>
+    <string name="source.button.done" tools:ignore="ExtraTranslation">Hecho</string>
+    <string name="source.section.local" tools:ignore="ExtraTranslation">LOCAL</string>
+    <string name="source.section.national" tools:ignore="ExtraTranslation">NACIONAL</string>
+    <string name="source.section.international" tools:ignore="ExtraTranslation">INTERNACIONAL</string>
+    <string name="source.section.sports" tools:ignore="ExtraTranslation">DEPORTES</string>
+    <string name="source.section.economy" tools:ignore="ExtraTranslation">ECONOMÍA</string>
+    <string name="source.section.tech" tools:ignore="ExtraTranslation">¡MÁS!</string>
+    <string name="source.error" tools:ignore="ExtraTranslation">Fuentes no disponibles por el momento</string>
+    <string name="source.no_selected.error" tools:ignore="ExtraTranslation">Debes seleccionar al menos una fuente</string>
+
+    <!-- Profile -->
+    <string name="profile.title.top" tools:ignore="ExtraTranslation">Perfil</string>
+    <string name="profile.button.notification" tools:ignore="ExtraTranslation">Notificaciones</string>
+    <string name="profile.default.location" tools:ignore="ExtraTranslation">Ubicación:</string>
+    <string name="profile.source.language" tools:ignore="ExtraTranslation">Idioma de la aplicación</string>
+    <string name="profile.source.sections" tools:ignore="ExtraTranslation">(Internacional, Deportes, Economia, Ciencia)</string>
+    <string name="profile.language.spanish" tools:ignore="ExtraTranslation">Español</string>
+    <string name="profile.language.english" tools:ignore="ExtraTranslation">Ingles</string>
+    <string name="profile.dialog.location.title" tools:ignore="ExtraTranslation">TwitFeed</string>
+    <string name="profile.dialog.location.message" tools:ignore="ExtraTranslation">¿Cambiar ubicación por defecto?</string>
+    <string name="profile.error" tools:ignore="ExtraTranslation">Lo sentimos, no fue posible guardar tu perfil</string>
+
+    <string-array name="facebook_ads">
+        <item>2226297880720394_2265668183450030</item><!-- LOCAL 0 -->
+        <item>2226297880720394_2267310636619118</item><!-- NATIONAL 1 -->
+        <item>2226297880720394_2267314939952021</item><!-- INTERNATIONAL 2 -->
+        <item>2226297880720394_2267316439951871</item><!-- SPORTS 3 -->
+        <item>2226297880720394_2267331963283652</item><!-- ECONOMY 4 -->
+        <item>2226297880720394_2267336326616549</item><!-- TECH 5 -->
+        <item>2226297880720394_2267302533286595</item><!-- LOCAL 6 -->
+        <item>2226297880720394_2265667973450051</item><!-- LOCAL 7 -->
+        <item>2226297880720394_2267310383285810</item><!-- LOCAL 8 -->
+        <item>2226297880720394_2267310836619098</item><!-- NATIONAL 9 -->
+        <item>2226297880720394_2267314239952091</item><!-- NATIONAL 10 -->
+        <item>2226297880720394_2267314443285404</item><!-- NATIONAL 11 -->
+        <item>2226297880720394_2267315243285324</item><!-- INTERNATIONAL 12 -->
+        <item>2226297880720394_2267314929952022</item><!-- INTERNATIONAL 13 -->
+        <item>2226297880720394_2267316429951872</item><!-- INTERNATIONAL 14 -->
+        <item>2226297880720394_2267331296617052</item><!-- SPORTS 15 -->
+        <item>2226297880720394_2267331506617031</item><!-- SPORTS 16 -->
+        <item>2226297880720394_2267331733283675</item><!-- SPORTS 17 -->
+        <item>2226297880720394_2267332526616929</item><!-- ECONOMY 18 -->
+        <item>2226297880720394_2267335659949949</item><!-- ECONOMY 19 -->
+        <item>2226297880720394_2267336116616570</item><!-- ECONOMY 20 -->
+        <item>2226297880720394_2267336519949863</item><!-- TECH 21 -->
+        <item>2226297880720394_2267336783283170</item><!-- TECH 22 -->
+        <item>2226297880720394_2267336986616483</item><!-- TECH 23 -->
+    </string-array>
+
+</resources>

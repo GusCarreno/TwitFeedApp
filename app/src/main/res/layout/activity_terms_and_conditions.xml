@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/slidingLayoutTerms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    app:umanoOverlay="true"
+    app:umanoPanelHeight="0dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context="com.twitfeapp.twitfeeds.terms.TermsAndConditionsActivity">
+
+        <include
+            android:id="@+id/linearTop"
+            layout="@layout/header_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearMiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearTop">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/terms.label.title"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlue1"
+                fontPath="fonts/Lato_Regular.ttf"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:text="@string/terms.label.content"
+                android:textSize="18sp"
+                android:textColor="@color/colorGray1"
+                fontPath="fonts/Lato_Regular.ttf"
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/buttonContinue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearMiddle">
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switchTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textViewTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="@string/terms.label.switch"
+                android:textSize="16sp"
+                android:textColor="@color/colorBlue2"
+                android:textStyle="bold"
+                fontPath="fonts/Lato_Black.ttf"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/buttonContinue"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/label.continue"
+            android:textColor="@android:color/white"
+            android:background="@color/colorGray2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            fontPath="fonts/Lato_Regular.ttf"
+            tools:ignore="MissingPrefix" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <include layout="@layout/panel_terms" />
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

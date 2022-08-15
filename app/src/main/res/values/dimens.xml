@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="country.select.content.marginTop">80dp</dimen>
+
+    <!-- Login -->
+    <dimen name="login.text.size">14sp</dimen>
+    <dimen name="login.twitter.marginTop">10dp</dimen>
+    <dimen name="login.label3.marginTop">10dp</dimen>
+    <dimen name="login.facebook.marginTop">10dp</dimen>
+    <dimen name="login.google.marginTop">10dp</dimen>
+    <dimen name="login.label4.marginTop">10dp</dimen>
+
+    <!-- Top -->
+    <dimen name="top.title.text.size">13sp</dimen>
+    <dimen name="top.source.text.size">10sp</dimen>
+    <dimen name="top.latest.title.text.size">16sp</dimen>
+    <dimen name="top.latest.image.text.size">15dp</dimen>
+    <dimen name="top.latest.content.text.size">12sp</dimen>
+    <dimen name="top.latest.source.text.size">10sp</dimen>
+    <dimen name="top.weather.title.text.size">12sp</dimen>
+    <dimen name="top.weather.location.text.size">16sp</dimen>
+    <dimen name="top.weather.location.image.size">20dp</dimen>
+    <dimen name="top.weather.hour.text.size">12sp</dimen>
+    <dimen name="top.weather.degrees.text.size">40sp</dimen>
+    <dimen name="top.weather.degrees.image.size">30dp</dimen>
+
+    <!-- Twits -->
+    <dimen name="twit.title.text.size">12sp</dimen>
+    <dimen name="twit.source.text.size">10sp</dimen>
+    <dimen name="twit.hour.text.size">8sp</dimen>
+
+    <!-- Profile -->
+    <dimen name="profile.language.text.size">13sp</dimen>
+    <dimen name="profile.sections.text.size">8sp</dimen>
+    <dimen name="profile.choose.text.size">10sp</dimen>
+
+    <!-- Settings -->
+    <dimen name="setting.item.text.size">12sp</dimen>
+    <dimen name="add.height.aspect">0.6</dimen>
+    <dimen name="add.width.aspect">0.3</dimen>
+
+</resources>
